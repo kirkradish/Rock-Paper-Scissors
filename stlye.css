@@ -1,0 +1,39 @@
+#weapons-containter {
+    text-align: center;
+}
+ul#selection,
+ul#selection li {
+    margin: 15px 0;
+    padding: 0;
+}
+ul#selection li {
+    font-family: "Open Sans",sans-serif;
+    margin: 0 5px 30px 5px;
+    padding: 5px 30px;
+    background-color: #142029;
+    display: inline-block;
+    list-style-type: none;
+    color: #ffffff;
+    letter-spacing: 0.25em;
+    cursor: pointer;
+}
+
+#scoreboard ul { margin: 0; padding: 0; }
+    #scoreboard ul li {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #95C1DA;
+    }
+
+#computer-weapon,
+#user-weapon { text-transform: uppercase; }
+.score-num {
+    color: red;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.25px;
+    font-size: 1em;
+    color: #999;
+}
+#user-choice { text-transform: uppercase;}
