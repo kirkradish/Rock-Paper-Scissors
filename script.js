@@ -78,6 +78,13 @@ selection.addEventListener("click", function(e) {
         selection.style.pointerEvents = "none";
         var userWeapon = e.target.id;
         var favored;
+        
+        userSel.className = "user-tilt";
+        computerSel.className = "computer-tilt";
+        setTimeout(function() {
+            userSel.className = "";
+            computerSel.className = "";
+        }, 200);
 
         // STORE SELECTIONS IN ARRAY
         // POST TO SCOREBOARD
