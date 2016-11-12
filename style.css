@@ -37,3 +37,44 @@ ul#selection li {
     color: #999;
 }
 #user-choice { text-transform: uppercase;}
+.computer-tilt {
+    -webkit-animation-name: computer-tilt; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: computer-tilt;
+    animation-duration: 100ms;
+    transform-origin: right bottom;
+}
+
+@keyframes computer-tilt {
+    from {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(7deg); /* IE 9 */
+        webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+        transform: rotate(7deg);
+    }
+}
+
+.user-tilt {
+    -webkit-animation-name: user-tilt; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: user-tilt;
+    animation-duration: 100ms;
+    transform-origin: left bottom;
+}
+
+@keyframes user-tilt {
+    from {
+        -ms-transform: rotate(0deg); /* IE 9 */
+        webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(-7deg); /* IE 9 */
+        webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+        transform: rotate(-7deg);
+    }
+}
